@@ -9,7 +9,6 @@ age INTEGER NOT NULL DEFAULT 0,
 position CHARACTER(1) NOT NULL,
 salary DECIMAL(10,2)NOT NULL DEFAULT 0,
 hire_date DATETIME,
--- TODO foreign key
 skills_data_id INTEGER NOT NULL,
 team_id INTEGER
 );
