@@ -10,9 +10,6 @@ last_name VARCHAR(12) NOT NULL,
 create_at DATETIME DEFAULT current_timestamp,
 CONSTRAINT unique_names UNIQUE (first_name, mid_name, last_name)
 );
--- insert as a single transcription 
-INSERT INTO Person (first_name, last_name) VALUE ('Ivan', 'Stoqnov'), ('Stoqn', 'Ivanov'), ('Lora', 'Dimitrova');
-SELECT * FROM Person;
 
 CREATE TABLE IF NOT EXISTS Email( -- Many phones related to a Specific Person 
 -- secondary, auhiliary table: Add info to main table
